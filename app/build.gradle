@@ -18,15 +18,19 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-    // aset tidak dimampatkan supaya boleh dibaca WebView
-    aaptOptions { noCompress 'html', 'js', 'json', 'css' }
+
+    // Aset tidak dimampatkan supaya WebView boleh membacanya terus
+    androidResources {
+        noCompress 'html', 'js', 'json', 'css'
+    }
 }
 
-dependencies {
-    implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation 'androidx.webkit:webkit:1.11.0'
-}
+// TIADA dependencies — MainActivity hanya guna android.app.Activity dan
+// android.webkit.WebView (kedua-duanya dalam SDK asas).
+// appcompat menarik kotlin-stdlib dua versi -> "Duplicate class" -> binaan gagal.
+dependencies { }

@@ -1,0 +1,606 @@
+bina	Set up job	﻿2026-11-10T12:24:14.3784020Z Current runner version: '2.338.2'
+bina	Set up job	2026-11-10T12:24:14.3805169Z ##[group]Runner Image Provisioner
+bina	Set up job	2026-11-10T12:24:14.3806005Z Hosted Compute Agent
+bina	Set up job	2026-11-10T12:24:14.3806489Z Version: 20261028.624
+bina	Set up job	2026-11-10T12:24:14.3807051Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+bina	Set up job	2026-11-10T12:24:14.3807684Z Build Date: 2026-10-28T21:51:42Z
+bina	Set up job	2026-11-10T12:24:14.3808233Z Worker ID: {08afcb77-597d-41a4-8dc5-1a996dd0474b}
+bina	Set up job	2026-11-10T12:24:14.3809126Z Region: westus3
+bina	Set up job	2026-11-10T12:24:14.3809625Z Cloud: Azure
+bina	Set up job	2026-11-10T12:24:14.3810106Z ##[endgroup]
+bina	Set up job	2026-11-10T12:24:14.3811288Z ##[group]Operating System
+bina	Set up job	2026-11-10T12:24:14.3811813Z Ubuntu
+bina	Set up job	2026-11-10T12:24:14.3812317Z 26.04.1
+bina	Set up job	2026-11-10T12:24:14.3812745Z LTS
+bina	Set up job	2026-11-10T12:24:14.3813201Z ##[endgroup]
+bina	Set up job	2026-11-10T12:24:14.3813698Z ##[group]Runner Image
+bina	Set up job	2026-11-10T12:24:14.3814188Z Image: ubuntu-26.04
+bina	Set up job	2026-11-10T12:24:14.3814689Z Version: 20261101.186.1
+bina	Set up job	2026-11-10T12:24:14.3815542Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+bina	Set up job	2026-11-10T12:24:14.3816990Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+bina	Set up job	2026-11-10T12:24:14.3817787Z ##[endgroup]
+bina	Set up job	2026-11-10T12:24:14.3819333Z ##[group]GITHUB_TOKEN Permissions
+bina	Set up job	2026-11-10T12:24:14.3821064Z Contents: read
+bina	Set up job	2026-11-10T12:24:14.3821664Z Metadata: read
+bina	Set up job	2026-11-10T12:24:14.3822135Z Packages: read
+bina	Set up job	2026-11-10T12:24:14.3822656Z ##[endgroup]
+bina	Set up job	2026-11-10T12:24:14.3824312Z Secret source: Actions
+bina	Set up job	2026-11-10T12:24:14.3825059Z Cache mode: write
+bina	Set up job	2026-11-10T12:24:14.3825694Z Prepare workflow directory
+bina	Set up job	2026-11-10T12:24:14.4097825Z Prepare all required actions
+bina	Set up job	2026-11-10T12:24:14.4152763Z Getting action download info
+bina	Set up job	2026-11-10T12:24:14.7238025Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+bina	Set up job	2026-11-10T12:24:14.8504347Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+bina	Set up job	2026-11-10T12:24:15.5833417Z Download action repository 'gradle/actions@v3' (SHA:d9c87d481d55275bb5441eef3fe0e46805f9ef70)
+bina	Set up job	2026-11-10T12:24:16.7066166Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+bina	Set up job	2026-11-10T12:24:16.9132456Z Complete job name: bina
+bina	Run actions/checkout@v4	﻿2026-11-10T12:24:16.9765989Z ##[group]Run actions/checkout@v4
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9766528Z with:
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9766785Z   repository: Solelyy4/nexplay-android
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9769127Z   token: ***
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9769358Z   ssh-strict: true
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9769585Z   ssh-user: git
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9769816Z   persist-credentials: true
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9770060Z   clean: true
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9770287Z   sparse-checkout-cone-mode: true
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9770551Z   fetch-depth: 1
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9770771Z   fetch-tags: false
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9770995Z   show-progress: true
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9771230Z   lfs: false
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9771441Z   submodules: false
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9771661Z   set-safe-directory: true
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9771913Z   allow-unsafe-pr-checkout: false
+bina	Run actions/checkout@v4	2026-11-10T12:24:16.9772340Z ##[endgroup]
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1734330Z Syncing repository: Solelyy4/nexplay-android
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1736010Z ##[group]Getting Git version info
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1736593Z Working directory is '/home/runner/work/nexplay-android/nexplay-android'
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1737473Z [command]/usr/bin/git version
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1769837Z git version 2.56.0
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1783107Z ##[endgroup]
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1796998Z Temporarily overriding HOME='/home/runner/work/_temp/550b7801-5c41-4c42-8786-503a0b743f59' before making global git config changes
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1876981Z Adding repository directory to the temporary git global config as a safe directory
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1883262Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nexplay-android/nexplay-android
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1885999Z Deleting the contents of '/home/runner/work/nexplay-android/nexplay-android'
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1890382Z ##[group]Initializing the repository
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1900004Z [command]/usr/bin/git init /home/runner/work/nexplay-android/nexplay-android
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1983667Z hint: Using 'master' as the name for the initial branch. This default branch name
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1984585Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1985324Z hint: to use in all of your new repositories, which will suppress this warning,
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1987318Z hint: call:
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1987693Z hint:
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1988179Z hint: 	git config --global init.defaultBranch <name>
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1989161Z hint:
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1989602Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1990327Z hint: 'development'. The just-created branch can be renamed via this command:
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1991082Z hint:
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1991423Z hint: 	git branch -m <name>
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1991786Z hint:
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1992276Z hint: Disable this message with "git config set advice.defaultBranchName false"
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.1997391Z Initialized empty Git repository in /home/runner/work/nexplay-android/nexplay-android/.git/
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2005900Z [command]/usr/bin/git remote add origin https://github.com/Solelyy4/nexplay-android
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2056976Z ##[endgroup]
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2057644Z ##[group]Disabling automatic garbage collection
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2059640Z [command]/usr/bin/git config --local gc.auto 0
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2097675Z ##[endgroup]
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2098280Z ##[group]Setting up auth
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2104691Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2138506Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2566833Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2597338Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2856653Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.2889817Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.3151259Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.3191475Z ##[endgroup]
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.3192152Z ##[group]Fetching the repository
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.3199642Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4b9a6e56e4a0036ecd17ccbd8c517d5a4890c1ca:refs/remotes/origin/master
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7394320Z From https://github.com/Solelyy4/nexplay-android
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7394947Z  * [new ref]         4b9a6e56e4a0036ecd17ccbd8c517d5a4890c1ca -> origin/master
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7397757Z ##[endgroup]
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7398279Z ##[group]Determining the checkout info
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7400365Z ##[endgroup]
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7405171Z [command]/usr/bin/git sparse-checkout disable
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7449690Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7476230Z ##[group]Checking out the ref
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7479845Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7544335Z Reset branch 'master'
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7548288Z branch 'master' set up to track 'origin/master'.
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7553351Z ##[endgroup]
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7590009Z [command]/usr/bin/git log -1 --format=%H
+bina	Run actions/checkout@v4	2026-11-10T12:24:17.7612428Z 4b9a6e56e4a0036ecd17ccbd8c517d5a4890c1ca
+bina	Sediakan JDK 17	﻿2026-11-10T12:24:17.7856665Z ##[group]Run actions/setup-java@v4
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7857120Z with:
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7857299Z   java-version: 17
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7857481Z   distribution: temurin
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7857675Z   java-package: jdk
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7857852Z   check-latest: false
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7858028Z   server-id: github
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7858208Z   server-username: GITHUB_ACTOR
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7858419Z   server-password: GITHUB_TOKEN
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7858620Z   overwrite-settings: true
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7858958Z   job-status: success
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7861015Z   token: ***
+bina	Sediakan JDK 17	2026-11-10T12:24:17.7861189Z ##[endgroup]
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9255857Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9261980Z ##[group]Installed distributions
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9357761Z Resolved Java 17.0.21+9 from tool-cache
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9358231Z Setting Java 17.0.21+9 as the default
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9366262Z (node:2263) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9367257Z (Use `node --trace-deprecation ...` to show where the warning was created)
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9369437Z Creating toolchains.xml for JDK version 17 from temurin
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9425556Z Writing to /home/runner/.m2/toolchains.xml
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9425910Z 
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9426037Z Java configuration:
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9426343Z   Distribution: temurin
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9426645Z   Version: 17.0.21+9
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9429066Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9429682Z 
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9430151Z ##[endgroup]
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9443685Z Creating settings.xml with server-id: github
+bina	Sediakan JDK 17	2026-11-10T12:24:17.9474431Z Writing to /home/runner/.m2/settings.xml
+bina	Sahkan Android SDK	﻿2026-11-10T12:24:17.9668116Z ##[group]Run echo "ANDROID_HOME=$ANDROID_HOME"
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9668979Z ^[[36;1mecho "ANDROID_HOME=$ANDROID_HOME"^[[0m
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9669495Z ^[[36;1mecho "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"^[[0m
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9670015Z ^[[36;1mls "$ANDROID_HOME" | head -20^[[0m
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9670518Z ^[[36;1mls "$ANDROID_HOME/platforms" 2>/dev/null || echo "tiada platforms"^[[0m
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9739753Z shell: /usr/bin/bash -e {0}
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9740189Z env:
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9740578Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9741203Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9741684Z ##[endgroup]
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9847442Z ANDROID_HOME=/usr/local/lib/android/sdk
+bina	Sahkan Android SDK	2026-11-10T12:24:17.9847874Z ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0039462Z build-tools
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0039731Z cmake
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0039899Z cmdline-tools
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0040077Z extras
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0040360Z licenses
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0040516Z ndk
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0040699Z packages-list.txt
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0040919Z platform-tools
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0041108Z platforms
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0150140Z android-34
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0150472Z android-34-ext10
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0150750Z android-34-ext11
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0151017Z android-34-ext12
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0151277Z android-34-ext8
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0151546Z android-35
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0151788Z android-35-ext14
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0152090Z android-35-ext15
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0152343Z android-36
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0152583Z android-36-ext18
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0152838Z android-36-ext19
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0153091Z android-36.1
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0153336Z android-37.0
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0153576Z android-37.1
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0153815Z android-37.2
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0154069Z android-37.2-beta1
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0154331Z android-37.2-beta2
+bina	Sahkan Android SDK	2026-11-10T12:24:18.0154600Z android-37.2-beta3
+bina	Sediakan Gradle	﻿2026-11-10T12:24:18.0282479Z ##[group]Run gradle/actions/setup-gradle@v3
+bina	Sediakan Gradle	2026-11-10T12:24:18.0282753Z with:
+bina	Sediakan Gradle	2026-11-10T12:24:18.0282923Z   cache-disabled: false
+bina	Sediakan Gradle	2026-11-10T12:24:18.0283118Z   cache-read-only: false
+bina	Sediakan Gradle	2026-11-10T12:24:18.0283478Z   cache-write-only: false
+bina	Sediakan Gradle	2026-11-10T12:24:18.0283689Z   cache-overwrite-existing: false
+bina	Sediakan Gradle	2026-11-10T12:24:18.0283941Z   gradle-home-cache-includes: caches
+bina	Sediakan Gradle	notifications
+bina	Sediakan Gradle	
+bina	Sediakan Gradle	2026-11-10T12:24:18.0284215Z   gradle-home-cache-cleanup: false
+bina	Sediakan Gradle	2026-11-10T12:24:18.0284432Z   add-job-summary: always
+bina	Sediakan Gradle	2026-11-10T12:24:18.0284644Z   add-job-summary-as-pr-comment: never
+bina	Sediakan Gradle	2026-11-10T12:24:18.0284874Z   dependency-graph: disabled
+bina	Sediakan Gradle	2026-11-10T12:24:18.0285170Z   dependency-graph-continue-on-failure: true
+bina	Sediakan Gradle	2026-11-10T12:24:18.0285432Z   build-scan-publish: false
+bina	Sediakan Gradle	2026-11-10T12:24:18.0285652Z   validate-wrappers: false
+bina	Sediakan Gradle	2026-11-10T12:24:18.0285857Z   generate-job-summary: true
+bina	Sediakan Gradle	2026-11-10T12:24:18.0286080Z   gradle-home-cache-strict-match: false
+bina	Sediakan Gradle	2026-11-10T12:24:18.0286310Z   workflow-job-context: null
+bina	Sediakan Gradle	2026-11-10T12:24:18.0288406Z   github-token: ***
+bina	Sediakan Gradle	2026-11-10T12:24:18.0288584Z env:
+bina	Sediakan Gradle	2026-11-10T12:24:18.0289095Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Sediakan Gradle	2026-11-10T12:24:18.0289501Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Sediakan Gradle	2026-11-10T12:24:18.0289812Z ##[endgroup]
+bina	Sediakan Gradle	2026-11-10T12:24:18.1804491Z (node:2281) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+bina	Sediakan Gradle	2026-11-10T12:24:18.1805319Z (Use `node --trace-deprecation ...` to show where the warning was created)
+bina	Sediakan Gradle	2026-11-10T12:24:22.8418030Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
+bina	Sediakan Gradle	2026-11-10T12:24:22.8420480Z ##[group]Restore Gradle state from cache
+bina	Sediakan Gradle	2026-11-10T12:24:22.9893344Z ##[warning]Failed to restore gradle-home-v1|Linux|bina[241e932526c2cb948cd7c74b3a22735e]-4b9a6e56e4a0036ecd17ccbd8c517d5a4890c1ca: Error: Cache service responded with 400
+bina	Sediakan Gradle	2026-11-10T12:24:22.9955496Z Gradle User Home cache not found. Will initialize empty.
+bina	Sediakan Gradle	2026-11-10T12:24:22.9960097Z ##[endgroup]
+bina	Terima lesen SDK	﻿2026-11-10T12:24:23.0090604Z ##[group]Run yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null 2>&1 || true
+bina	Terima lesen SDK	2026-11-10T12:24:23.0091250Z ^[[36;1myes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null 2>&1 || true^[[0m
+bina	Terima lesen SDK	2026-11-10T12:24:23.0135316Z shell: /usr/bin/bash -e {0}
+bina	Terima lesen SDK	2026-11-10T12:24:23.0135551Z env:
+bina	Terima lesen SDK	2026-11-10T12:24:23.0135816Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Terima lesen SDK	2026-11-10T12:24:23.0136215Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Terima lesen SDK	2026-11-10T12:24:23.0136547Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+bina	Terima lesen SDK	2026-11-10T12:24:23.0136801Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+bina	Terima lesen SDK	2026-11-10T12:24:23.0137044Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+bina	Terima lesen SDK	2026-11-10T12:24:23.0137407Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+bina	Terima lesen SDK	2026-11-10T12:24:23.0137818Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+bina	Terima lesen SDK	2026-11-10T12:24:23.0138089Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+bina	Terima lesen SDK	2026-11-10T12:24:23.0138360Z ##[endgroup]
+bina	Terima lesen SDK	2026-11-10T12:24:37.7429898Z yes: standard output: Broken pipe
+bina	Pasang platform yang diperlukan	﻿2026-11-10T12:24:37.7473756Z ##[group]Run "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-34" "build-tools;34.0.0" 2>&1 | tail -5 || true
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7474977Z ^[[36;1m"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-34" "build-tools;34.0.0" 2>&1 | tail -5 || true^[[0m
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7536567Z shell: /usr/bin/bash -e {0}
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7536930Z env:
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7537343Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7538020Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7538576Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7539207Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7539620Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7540210Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7540880Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7541692Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:37.7542051Z ##[endgroup]
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9916625Z Loading package information...                                                  
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9919628Z Loading local repository...                                                     
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9920178Z [                                       ] 3% Loading local repository...        
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9920619Z [                                       ] 3% Fetch remote repository...         
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9924247Z [=                                      ] 3% Fetch remote repository...         
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9924706Z [=                                      ] 4% Fetch remote repository...         
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9925118Z [=                                      ] 5% Fetch remote repository...         
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9925515Z [==                                     ] 5% Fetch remote repository...         
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9925972Z [==                                     ] 6% Fetch remote repository...         
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9926437Z [==                                     ] 7% Fetch remote repository...         
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9926880Z [==                                     ] 7% Computing updates...               
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9927349Z [===                                    ] 8% Computing updates...               
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9927816Z [===                                    ] 10% Computing updates...              
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9928265Z [=======================================] 100% Computing updates...             
+bina	Pasang platform yang diperlukan	2026-11-10T12:24:38.9928559Z 
+bina	Bina APK	﻿2026-11-10T12:24:38.9965334Z ##[group]Run gradle assembleDebug --no-daemon --stacktrace
+bina	Bina APK	2026-11-10T12:24:38.9965935Z ^[[36;1mgradle assembleDebug --no-daemon --stacktrace^[[0m
+bina	Bina APK	2026-11-10T12:24:39.0027875Z shell: /usr/bin/bash -e {0}
+bina	Bina APK	2026-11-10T12:24:39.0028214Z env:
+bina	Bina APK	2026-11-10T12:24:39.0028607Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Bina APK	2026-11-10T12:24:39.0029434Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+bina	Bina APK	2026-11-10T12:24:39.0030003Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+bina	Bina APK	2026-11-10T12:24:39.0030421Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+bina	Bina APK	2026-11-10T12:24:39.0030804Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+bina	Bina APK	2026-11-10T12:24:39.0031376Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+bina	Bina APK	2026-11-10T12:24:39.0032045Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+bina	Bina APK	2026-11-10T12:24:39.0032493Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+bina	Bina APK	2026-11-10T12:24:39.0032857Z ##[endgroup]
+bina	Bina APK	2026-11-10T12:24:47.8407107Z 
+bina	Bina APK	2026-11-10T12:24:47.8407767Z Welcome to Gradle 9.8.2!
+bina	Bina APK	2026-11-10T12:24:47.8408024Z 
+bina	Bina APK	2026-11-10T12:24:47.8409026Z Here are the highlights of this release:
+bina	Bina APK	2026-11-10T12:24:47.8409753Z  - Java 27 support
+bina	Bina APK	2026-11-10T12:24:47.8410598Z  - Maven mirror settings reuse
+bina	Bina APK	2026-11-10T12:24:47.8411877Z  - Linked problem locations in build output
+bina	Bina APK	2026-11-10T12:24:47.8412332Z 
+bina	Bina APK	2026-11-10T12:24:47.8417569Z For more details see https://docs.gradle.org/9.8.2/release-notes.html
+bina	Bina APK	2026-11-10T12:24:47.8418013Z 
+bina	Bina APK	2026-11-10T12:24:49.1289383Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+bina	Bina APK	2026-11-10T12:24:58.0285244Z Daemon will be stopped at the end of the build 
+bina	Bina APK	2026-11-10T12:25:30.2294793Z > Task :app:preBuild UP-TO-DATE
+bina	Bina APK	2026-11-10T12:25:30.2299365Z > Task :app:preDebugBuild UP-TO-DATE
+bina	Bina APK	2026-11-10T12:25:30.2299785Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+bina	Bina APK	2026-11-10T12:25:30.3284992Z > Task :app:javaPreCompileDebug
+bina	Bina APK	2026-11-10T12:25:34.5285770Z > Task :app:checkDebugAarMetadata
+bina	Bina APK	2026-11-10T12:25:34.5286515Z > Task :app:generateDebugResValues
+bina	Bina APK	2026-11-10T12:25:34.6293288Z > Task :app:mapDebugSourceSetPaths
+bina	Bina APK	2026-11-10T12:25:34.6309857Z > Task :app:generateDebugResources
+bina	Bina APK	2026-11-10T12:25:35.1285043Z > Task :app:packageDebugResources
+bina	Bina APK	2026-11-10T12:25:35.8284801Z > Task :app:mergeDebugResources
+bina	Bina APK	2026-11-10T12:25:38.2285366Z > Task :app:createDebugCompatibleScreenManifests
+bina	Bina APK	2026-11-10T12:25:38.2293033Z > Task :app:extractDeepLinksDebug
+bina	Bina APK	2026-11-10T12:25:38.2293819Z > Task :app:parseDebugLocalResources
+bina	Bina APK	2026-11-10T12:25:38.3284802Z > Task :app:processDebugMainManifest
+bina	Bina APK	2026-11-10T12:25:39.5310159Z > Task :app:processDebugManifest
+bina	Bina APK	2026-11-10T12:25:39.5344803Z > Task :app:mergeDebugShaders
+bina	Bina APK	2026-11-10T12:25:39.6319761Z > Task :app:compileDebugShaders NO-SOURCE
+bina	Bina APK	2026-11-10T12:25:39.6326308Z > Task :app:generateDebugAssets UP-TO-DATE
+bina	Bina APK	2026-11-10T12:25:39.7284937Z > Task :app:mergeDebugAssets
+bina	Bina APK	2026-11-10T12:25:39.7285541Z > Task :app:processDebugManifestForPackage
+bina	Bina APK	2026-11-10T12:25:39.7285971Z > Task :app:compressDebugAssets
+bina	Bina APK	2026-11-10T12:25:40.8319934Z > Task :app:processDebugResources
+bina	Bina APK	2026-11-10T12:25:41.3317722Z > Task :app:desugarDebugFileDependencies
+bina	Bina APK	2026-11-10T12:25:44.9289431Z 
+bina	Bina APK	2026-11-10T12:25:44.9297659Z Note: /home/runner/work/nexplay-android/nexplay-android/app/src/main/java/com/boz/nexplay/MainActivity.java uses or overrides a deprecated API.
+bina	Bina APK	2026-11-10T12:25:44.9298305Z Note: Recompile with -Xlint:deprecation for details.
+bina	Bina APK	2026-11-10T12:25:44.9298615Z > Task :app:compileDebugJavaWithJavac
+bina	Bina APK	2026-11-10T12:25:47.5330287Z 
+bina	Bina APK	2026-11-10T12:25:47.5389636Z > Task :app:dexBuilderDebug
+bina	Bina APK	2026-11-10T12:26:02.4285539Z > Task :app:processDebugJavaRes NO-SOURCE
+bina	Bina APK	2026-11-10T12:26:02.5287866Z > Task :app:mergeDebugGlobalSynthetics
+bina	Bina APK	2026-11-10T12:26:02.7310391Z > Task :app:mergeDebugStartupProfile
+bina	Bina APK	2026-11-10T12:26:02.7369949Z > Task :app:mergeDebugJniLibFolders
+bina	Bina APK	2026-11-10T12:26:02.7419842Z > Task :app:checkDebugDuplicateClasses FAILED
+bina	Bina APK	2026-11-10T12:26:02.8285209Z > Task :app:mergeDebugNativeLibs NO-SOURCE
+bina	Bina APK	2026-11-10T12:26:03.0309511Z 
+bina	Bina APK	2026-11-10T12:26:03.0310146Z > Task :app:mergeDebugJavaResource
+bina	Bina APK	2026-11-10T12:26:03.0310841Z 
+bina	Bina APK	2026-11-10T12:26:03.0339952Z [Incubating] Problems report is available at: file:///home/runner/work/nexplay-android/nexplay-android/build/reports/problems/problems-report.html
+bina	Bina APK	2026-11-10T12:26:03.0341980Z FAILURE: Build failed with an exception.
+bina	Bina APK	2026-11-10T12:26:03.0399284Z 
+bina	Bina APK	2026-11-10T12:26:03.0409039Z * What went wrong:
+bina	Bina APK	2026-11-10T12:26:03.0460739Z Execution failed for task ':app:checkDebugDuplicateClasses' (registered by plugin 'com.android.internal.application').
+bina	Bina APK	2026-11-10T12:26:03.0461325Z 
+bina	Bina APK	2026-11-10T12:26:03.0463286Z > A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable
+bina	Bina APK	2026-11-10T12:26:03.0465154Z    > Duplicate class kotlin.collections.jdk8.CollectionsJDK8Kt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0467608Z      Duplicate class kotlin.internal.jdk7.JDK7PlatformImplementations found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0470400Z      Duplicate class kotlin.internal.jdk7.JDK7PlatformImplementations$ReflectSdkVersion found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0473001Z      Duplicate class kotlin.internal.jdk8.JDK8PlatformImplementations found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0475476Z      Duplicate class kotlin.internal.jdk8.JDK8PlatformImplementations$ReflectSdkVersion found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0478276Z      Duplicate class kotlin.io.path.ExperimentalPathApi found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0480712Z      Duplicate class kotlin.io.path.PathRelativizer found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0483059Z      Duplicate class kotlin.io.path.PathsKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0485392Z      Duplicate class kotlin.io.path.PathsKt__PathReadWriteKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0487745Z      Duplicate class kotlin.io.path.PathsKt__PathUtilsKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0490228Z      Duplicate class kotlin.jdk7.AutoCloseableKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0493103Z      Duplicate class kotlin.jvm.jdk8.JvmRepeatableKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0495775Z      Duplicate class kotlin.random.jdk8.PlatformThreadLocalRandom found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0498557Z      Duplicate class kotlin.streams.jdk8.StreamsKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0500227Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+bina	Bina APK	2026-11-10T12:26:03.0502417Z      Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$1 found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0512589Z      Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$2 found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0515780Z      Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$3 found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0518291Z      Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$4 found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0528892Z      Duplicate class kotlin.text.jdk8.RegexExtensionsJDK8Kt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0577218Z 
+bina	Bina APK	2026-11-10T12:26:03.0599611Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+bina	Bina APK	2026-11-10T12:26:03.0616811Z      Duplicate class kotlin.time.jdk8.DurationConversionsJDK8Kt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0636625Z 
+bina	Bina APK	2026-11-10T12:26:03.0637008Z      
+bina	Bina APK	2026-11-10T12:26:03.0637829Z      Go to the documentation to learn how to <a href="d.android.com/r/tools/classpath-sync-errors">Fix dependency resolution errors</a>.
+bina	Bina APK	2026-11-10T12:26:03.0638560Z 
+bina	Bina APK	2026-11-10T12:26:03.0638905Z * Try:
+bina	Bina APK	2026-11-10T12:26:03.0639626Z For more on this, please refer to https://docs.gradle.org/9.8.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+bina	Bina APK	2026-11-10T12:26:03.0640562Z > Run with --info or --debug option to get more log output.
+bina	Bina APK	2026-11-10T12:26:03.0641219Z > Run with --scan to get full insights from a Build Scan (powered by Develocity).
+bina	Bina APK	2026-11-10T12:26:03.0642183Z > Get more help at https://help.gradle.org.
+bina	Bina APK	2026-11-10T12:26:03.0642548Z 
+bina	Bina APK	2026-11-10T12:26:03.0642790Z * Exception is:
+bina	Bina APK	2026-11-10T12:26:03.0643692Z org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:checkDebugDuplicateClasses' (registered by plugin 'com.android.internal.application').
+bina	Bina APK	2026-11-10T12:26:03.0645070Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.lambda$doExecute$1(DefaultTaskNodeExecutor.java:367)
+bina	Bina APK	2026-11-10T12:26:03.0646110Z 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:288)
+bina	Bina APK	2026-11-10T12:26:03.0647013Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.doExecute(DefaultTaskNodeExecutor.java:365)
+bina	Bina APK	2026-11-10T12:26:03.0648290Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.executeTrackingTaskIdentity(DefaultTaskNodeExecutor.java:332)
+bina	Bina APK	2026-11-10T12:26:03.0649884Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.executeFinalizingProperties(DefaultTaskNodeExecutor.java:318)
+bina	Bina APK	2026-11-10T12:26:03.0651503Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.executeSkippingWithNoActions(DefaultTaskNodeExecutor.java:289)
+bina	Bina APK	2026-11-10T12:26:03.0653073Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.executeSkippingOnlyIf(DefaultTaskNodeExecutor.java:272)
+bina	Bina APK	2026-11-10T12:26:03.0654614Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.executeCatchingFailures(DefaultTaskNodeExecutor.java:228)
+bina	Bina APK	2026-11-10T12:26:03.0656229Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.executeWithFallbackOperationId(DefaultTaskNodeExecutor.java:197)
+bina	Bina APK	2026-11-10T12:26:03.0657831Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.executeWithLifecycle(DefaultTaskNodeExecutor.java:171)
+bina	Bina APK	2026-11-10T12:26:03.0659407Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.access$000(DefaultTaskNodeExecutor.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0660679Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor$1.run(DefaultTaskNodeExecutor.java:136)
+bina	Bina APK	2026-11-10T12:26:03.0661919Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
+bina	Bina APK	2026-11-10T12:26:03.0663263Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
+bina	Bina APK	2026-11-10T12:26:03.0664633Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0665709Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+bina	Bina APK	2026-11-10T12:26:03.0666816Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+bina	Bina APK	2026-11-10T12:26:03.0667904Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+bina	Bina APK	2026-11-10T12:26:03.0669122Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
+bina	Bina APK	2026-11-10T12:26:03.0670420Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.execute(DefaultTaskNodeExecutor.java:133)
+bina	Bina APK	2026-11-10T12:26:03.0671354Z 	at org.gradle.execution.plan.LocalTaskNode.execute(LocalTaskNode.java:229)
+bina	Bina APK	2026-11-10T12:26:03.0672273Z 	at org.gradle.execution.DefaultBuildWorkExecutor.lambda$executePlan$0(DefaultBuildWorkExecutor.java:153)
+bina	Bina APK	2026-11-10T12:26:03.0673329Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.lambda$execute$0(DefaultPlanExecutor.java:476)
+bina	Bina APK	2026-11-10T12:26:03.0674354Z 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+bina	Bina APK	2026-11-10T12:26:03.0675357Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:475)
+bina	Bina APK	2026-11-10T12:26:03.0676312Z 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:392)
+bina	Bina APK	2026-11-10T12:26:03.0677291Z 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:65)
+bina	Bina APK	2026-11-10T12:26:03.0678841Z 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+bina	Bina APK	2026-11-10T12:26:03.0680363Z Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable
+bina	Bina APK	2026-11-10T12:26:03.0682075Z 	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:273)
+bina	Bina APK	2026-11-10T12:26:03.0683294Z 	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:132)
+bina	Bina APK	2026-11-10T12:26:03.0684245Z 	at org.gradle.internal.Factories$1.create(Factories.java:30)
+bina	Bina APK	2026-11-10T12:26:03.0685136Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.lambda$withoutLocksBlocking$0(DefaultWorkerLeaseService.java:406)
+bina	Bina APK	2026-11-10T12:26:03.0686208Z 	at org.gradle.internal.work.ResourceLockStatistics$1.measure(ResourceLockStatistics.java:43)
+bina	Bina APK	2026-11-10T12:26:03.0687381Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocksBlocking(DefaultWorkerLeaseService.java:401)
+bina	Bina APK	2026-11-10T12:26:03.0688553Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.blocking(DefaultWorkerLeaseService.java:261)
+bina	Bina APK	2026-11-10T12:26:03.0689801Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.blocking(DefaultWorkerLeaseService.java:243)
+bina	Bina APK	2026-11-10T12:26:03.0691024Z 	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$1(DefaultAsyncWorkTracker.java:128)
+bina	Bina APK	2026-11-10T12:26:03.0691978Z 	at org.gradle.internal.Factories$1.create(Factories.java:30)
+bina	Bina APK	2026-11-10T12:26:03.0693057Z 	at org.gradle.internal.resources.AbstractResourceLockRegistry.whileDisallowingLockChanges(AbstractResourceLockRegistry.java:51)
+bina	Bina APK	2026-11-10T12:26:03.0694588Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.whileDisallowingProjectLockChanges(DefaultWorkerLeaseService.java:266)
+bina	Bina APK	2026-11-10T12:26:03.0695937Z 	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:127)
+bina	Bina APK	2026-11-10T12:26:03.0697180Z 	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:93)
+bina	Bina APK	2026-11-10T12:26:03.0698338Z 	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:79)
+bina	Bina APK	2026-11-10T12:26:03.0699881Z 	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0700910Z 	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:276)
+bina	Bina APK	2026-11-10T12:26:03.0701912Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
+bina	Bina APK	2026-11-10T12:26:03.0703083Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
+bina	Bina APK	2026-11-10T12:26:03.0704180Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0705281Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+bina	Bina APK	2026-11-10T12:26:03.0706377Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+bina	Bina APK	2026-11-10T12:26:03.0707604Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+bina	Bina APK	2026-11-10T12:26:03.0708682Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
+bina	Bina APK	2026-11-10T12:26:03.0709859Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:253)
+bina	Bina APK	2026-11-10T12:26:03.0710826Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:236)
+bina	Bina APK	2026-11-10T12:26:03.0711883Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:219)
+bina	Bina APK	2026-11-10T12:26:03.0712977Z 	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:185)
+bina	Bina APK	2026-11-10T12:26:03.0714169Z 	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:167)
+bina	Bina APK	2026-11-10T12:26:03.0715032Z 	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:47)
+bina	Bina APK	2026-11-10T12:26:03.0715926Z 	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:137)
+bina	Bina APK	2026-11-10T12:26:03.0716909Z 	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:134)
+bina	Bina APK	2026-11-10T12:26:03.0717969Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+bina	Bina APK	2026-11-10T12:26:03.0719446Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+bina	Bina APK	2026-11-10T12:26:03.0720656Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0721736Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+bina	Bina APK	2026-11-10T12:26:03.0722865Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+bina	Bina APK	2026-11-10T12:26:03.0723939Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+bina	Bina APK	2026-11-10T12:26:03.0725025Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+bina	Bina APK	2026-11-10T12:26:03.0725999Z 	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:134)
+bina	Bina APK	2026-11-10T12:26:03.0726859Z 	at org.gradle.internal.execution.steps.ExecuteStep$Mutable.execute(ExecuteStep.java:80)
+bina	Bina APK	2026-11-10T12:26:03.0727795Z 	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+bina	Bina APK	2026-11-10T12:26:03.0728894Z 	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+bina	Bina APK	2026-11-10T12:26:03.0729799Z 	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+bina	Bina APK	2026-11-10T12:26:03.0730784Z 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:51)
+bina	Bina APK	2026-11-10T12:26:03.0732143Z 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:29)
+bina	Bina APK	2026-11-10T12:26:03.0733508Z 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.executeMutable(RemovePreviousOutputsStep.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0734648Z 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.executeMutable(RemovePreviousOutputsStep.java:39)
+bina	Bina APK	2026-11-10T12:26:03.0735618Z 	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:26)
+bina	Bina APK	2026-11-10T12:26:03.0736579Z 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:42)
+bina	Bina APK	2026-11-10T12:26:03.0737709Z 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:24)
+bina	Bina APK	2026-11-10T12:26:03.0739018Z 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+bina	Bina APK	2026-11-10T12:26:03.0745509Z 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+bina	Bina APK	2026-11-10T12:26:03.0746801Z 	at org.gradle.internal.execution.steps.ResolveInputChangesStep.executeMutable(ResolveInputChangesStep.java:39)
+bina	Bina APK	2026-11-10T12:26:03.0747926Z 	at org.gradle.internal.execution.steps.ResolveInputChangesStep.executeMutable(ResolveInputChangesStep.java:28)
+bina	Bina APK	2026-11-10T12:26:03.0749018Z 	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:26)
+bina	Bina APK	2026-11-10T12:26:03.0749924Z 	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+bina	Bina APK	2026-11-10T12:26:03.0750885Z 	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:76)
+bina	Bina APK	2026-11-10T12:26:03.0751647Z 	at org.gradle.internal.Either$Right.fold(Either.java:176)
+bina	Bina APK	2026-11-10T12:26:03.0752588Z 	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+bina	Bina APK	2026-11-10T12:26:03.0753410Z 	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:74)
+bina	Bina APK	2026-11-10T12:26:03.0754265Z 	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:49)
+bina	Bina APK	2026-11-10T12:26:03.0755255Z 	at org.gradle.internal.execution.steps.StoreExecutionStateStep.executeMutable(StoreExecutionStateStep.java:46)
+bina	Bina APK	2026-11-10T12:26:03.0756643Z 	at org.gradle.internal.execution.steps.StoreExecutionStateStep.executeMutable(StoreExecutionStateStep.java:35)
+bina	Bina APK	2026-11-10T12:26:03.0757623Z 	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:26)
+bina	Bina APK	2026-11-10T12:26:03.0758495Z 	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+bina	Bina APK	2026-11-10T12:26:03.0759598Z 	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+bina	Bina APK	2026-11-10T12:26:03.0760519Z 	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+bina	Bina APK	2026-11-10T12:26:03.0761422Z 	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+bina	Bina APK	2026-11-10T12:26:03.0762540Z 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+bina	Bina APK	2026-11-10T12:26:03.0763930Z 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+bina	Bina APK	2026-11-10T12:26:03.0765249Z 	at org.gradle.internal.execution.steps.ResolveMutableCachingStateStep.executeDelegate(ResolveMutableCachingStateStep.java:70)
+bina	Bina APK	2026-11-10T12:26:03.0766530Z 	at org.gradle.internal.execution.steps.ResolveMutableCachingStateStep.executeDelegate(ResolveMutableCachingStateStep.java:32)
+bina	Bina APK	2026-11-10T12:26:03.0767778Z 	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:69)
+bina	Bina APK	2026-11-10T12:26:03.0769112Z 	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:37)
+bina	Bina APK	2026-11-10T12:26:03.0770242Z 	at org.gradle.internal.execution.steps.ResolveChangesStep.executeMutable(ResolveChangesStep.java:63)
+bina	Bina APK	2026-11-10T12:26:03.0771451Z 	at org.gradle.internal.execution.steps.ResolveChangesStep.executeMutable(ResolveChangesStep.java:34)
+bina	Bina APK	2026-11-10T12:26:03.0772358Z 	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:26)
+bina	Bina APK	2026-11-10T12:26:03.0773251Z 	at org.gradle.internal.execution.steps.ValidateStep$Mutable.executeDelegate(ValidateStep.java:79)
+bina	Bina APK	2026-11-10T12:26:03.0774167Z 	at org.gradle.internal.execution.steps.ValidateStep$Mutable.executeDelegate(ValidateStep.java:65)
+bina	Bina APK	2026-11-10T12:26:03.0775034Z 	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:105)
+bina	Bina APK	2026-11-10T12:26:03.0775898Z 	at org.gradle.internal.execution.steps.ValidateStep$Mutable.execute(ValidateStep.java:65)
+bina	Bina APK	2026-11-10T12:26:03.0777062Z 	at org.gradle.internal.execution.steps.CaptureMutableStateBeforeExecutionStep.executeMutable(CaptureMutableStateBeforeExecutionStep.java:86)
+bina	Bina APK	2026-11-10T12:26:03.0778501Z 	at org.gradle.internal.execution.steps.CaptureMutableStateBeforeExecutionStep.execute(CaptureMutableStateBeforeExecutionStep.java:65)
+bina	Bina APK	2026-11-10T12:26:03.0780159Z 	at org.gradle.internal.execution.steps.CaptureMutableStateBeforeExecutionStep.execute(CaptureMutableStateBeforeExecutionStep.java:45)
+bina	Bina APK	2026-11-10T12:26:03.0781560Z 	at org.gradle.internal.execution.steps.SkipEmptyMutableWorkStep.executeWithNonEmptySources(SkipEmptyMutableWorkStep.java:210)
+bina	Bina APK	2026-11-10T12:26:03.0783015Z 	at org.gradle.internal.execution.steps.SkipEmptyMutableWorkStep.executeMutable(SkipEmptyMutableWorkStep.java:85)
+bina	Bina APK	2026-11-10T12:26:03.0784162Z 	at org.gradle.internal.execution.steps.SkipEmptyMutableWorkStep.executeMutable(SkipEmptyMutableWorkStep.java:53)
+bina	Bina APK	2026-11-10T12:26:03.0785080Z 	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:26)
+bina	Bina APK	2026-11-10T12:26:03.0786321Z 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+bina	Bina APK	2026-11-10T12:26:03.0787617Z 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.executeMutable(LoadPreviousExecutionStateStep.java:36)
+bina	Bina APK	2026-11-10T12:26:03.0789067Z 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.executeMutable(LoadPreviousExecutionStateStep.java:23)
+bina	Bina APK	2026-11-10T12:26:03.0790142Z 	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:26)
+bina	Bina APK	2026-11-10T12:26:03.0791093Z 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.executeMutable(HandleStaleOutputsStep.java:77)
+bina	Bina APK	2026-11-10T12:26:03.0792193Z 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.executeMutable(HandleStaleOutputsStep.java:43)
+bina	Bina APK	2026-11-10T12:26:03.0793130Z 	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:26)
+bina	Bina APK	2026-11-10T12:26:03.0794123Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$executeMutable$0(AssignMutableWorkspaceStep.java:34)
+bina	Bina APK	2026-11-10T12:26:03.0795220Z 	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:314)
+bina	Bina APK	2026-11-10T12:26:03.0796271Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.executeMutable(AssignMutableWorkspaceStep.java:30)
+bina	Bina APK	2026-11-10T12:26:03.0797361Z 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.executeMutable(AssignMutableWorkspaceStep.java:21)
+bina	Bina APK	2026-11-10T12:26:03.0798066Z 	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:26)
+bina	Bina APK	2026-11-10T12:26:03.0799026Z 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+bina	Bina APK	2026-11-10T12:26:03.0800003Z 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+bina	Bina APK	2026-11-10T12:26:03.0801187Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0802556Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0803853Z 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+bina	Bina APK	2026-11-10T12:26:03.0805147Z 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+bina	Bina APK	2026-11-10T12:26:03.0806055Z 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+bina	Bina APK	2026-11-10T12:26:03.0806913Z 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:56)
+bina	Bina APK	2026-11-10T12:26:03.0807711Z 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:38)
+bina	Bina APK	2026-11-10T12:26:03.0808594Z 	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:68)
+bina	Bina APK	2026-11-10T12:26:03.0809780Z 	at org.gradle.api.internal.tasks.execution.DefaultTaskNodeExecutor.doExecute(DefaultTaskNodeExecutor.java:364)
+bina	Bina APK	2026-11-10T12:26:03.0810549Z 	... 25 more
+bina	Bina APK	2026-11-10T12:26:03.0812048Z Caused by: java.lang.RuntimeException: Duplicate class kotlin.collections.jdk8.CollectionsJDK8Kt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0814547Z Duplicate class kotlin.internal.jdk7.JDK7PlatformImplementations found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0816956Z Duplicate class kotlin.internal.jdk7.JDK7PlatformImplementations$ReflectSdkVersion found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0820006Z Duplicate class kotlin.internal.jdk8.JDK8PlatformImplementations found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0822433Z Duplicate class kotlin.internal.jdk8.JDK8PlatformImplementations$ReflectSdkVersion found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0824775Z Duplicate class kotlin.io.path.ExperimentalPathApi found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0826934Z Duplicate class kotlin.io.path.PathRelativizer found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0829133Z Duplicate class kotlin.io.path.PathsKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0831363Z Duplicate class kotlin.io.path.PathsKt__PathReadWriteKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0833563Z Duplicate class kotlin.io.path.PathsKt__PathUtilsKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0835779Z Duplicate class kotlin.jdk7.AutoCloseableKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk7-1.6.21.jar -> kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0838074Z Duplicate class kotlin.jvm.jdk8.JvmRepeatableKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0840434Z Duplicate class kotlin.random.jdk8.PlatformThreadLocalRandom found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0842766Z Duplicate class kotlin.streams.jdk8.StreamsKt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0844950Z Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$1 found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0847308Z Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$2 found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0849958Z Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$3 found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0852398Z Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$4 found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0854811Z Duplicate class kotlin.text.jdk8.RegexExtensionsJDK8Kt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0857385Z Duplicate class kotlin.time.jdk8.DurationConversionsJDK8Kt found in modules kotlin-stdlib-1.8.22.jar -> kotlin-stdlib-1.8.22 (org.jetbrains.kotlin:kotlin-stdlib:1.8.22) and kotlin-stdlib-jdk8-1.6.21.jar -> kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+bina	Bina APK	2026-11-10T12:26:03.0859800Z 
+bina	Bina APK	2026-11-10T12:26:03.0860457Z Go to the documentation to learn how to <a href="d.android.com/r/tools/classpath-sync-errors">Fix dependency resolution errors</a>.
+bina	Bina APK	2026-11-10T12:26:03.0861605Z 	at com.android.build.gradle.internal.tasks.CheckDuplicateClassesDelegate.run(CheckDuplicateClassesDelegate.kt:65)
+bina	Bina APK	2026-11-10T12:26:03.0862760Z 	at com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable.execute(CheckDuplicateClassesDelegate.kt:91)
+bina	Bina APK	2026-11-10T12:26:03.0863766Z 	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:68)
+bina	Bina APK	2026-11-10T12:26:03.0864706Z 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:64)
+bina	Bina APK	2026-11-10T12:26:03.0865678Z 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:61)
+bina	Bina APK	2026-11-10T12:26:03.0866666Z 	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:103)
+bina	Bina APK	2026-11-10T12:26:03.0867692Z 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:61)
+bina	Bina APK	2026-11-10T12:26:03.0868933Z 	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+bina	Bina APK	2026-11-10T12:26:03.0869681Z 	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+bina	Bina APK	2026-11-10T12:26:03.0870702Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+bina	Bina APK	2026-11-10T12:26:03.0872032Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+bina	Bina APK	2026-11-10T12:26:03.0873296Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+bina	Bina APK	2026-11-10T12:26:03.0874371Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+bina	Bina APK	2026-11-10T12:26:03.0875449Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+bina	Bina APK	2026-11-10T12:26:03.0876520Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+bina	Bina APK	2026-11-10T12:26:03.0877585Z 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+bina	Bina APK	2026-11-10T12:26:03.0878621Z 	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+bina	Bina APK	2026-11-10T12:26:03.0879753Z 	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:58)
+bina	Bina APK	2026-11-10T12:26:03.0881053Z 	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$1(DefaultWorkerExecutor.java:169)
+bina	Bina APK	2026-11-10T12:26:03.0882227Z 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:191)
+bina	Bina APK	2026-11-10T12:26:03.0883660Z 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$600(DefaultConditionalExecutionQueue.java:112)
+bina	Bina APK	2026-11-10T12:26:03.0884889Z 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:168)
+bina	Bina APK	2026-11-10T12:26:03.0885812Z 	at org.gradle.internal.Factories$1.create(Factories.java:30)
+bina	Bina APK	2026-11-10T12:26:03.0886681Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.lambda$runAndReleaseLocks$0(DefaultWorkerLeaseService.java:296)
+bina	Bina APK	2026-11-10T12:26:03.0887691Z 	at org.gradle.internal.work.ResourceLockStatistics$1.measure(ResourceLockStatistics.java:43)
+bina	Bina APK	2026-11-10T12:26:03.0888684Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAndReleaseLocks(DefaultWorkerLeaseService.java:294)
+bina	Bina APK	2026-11-10T12:26:03.0889985Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocksAcquired(DefaultWorkerLeaseService.java:290)
+bina	Bina APK	2026-11-10T12:26:03.0891127Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:282)
+bina	Bina APK	2026-11-10T12:26:03.0892250Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+bina	Bina APK	2026-11-10T12:26:03.0893445Z 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:138)
+bina	Bina APK	2026-11-10T12:26:03.0894763Z 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:163)
+bina	Bina APK	2026-11-10T12:26:03.0896171Z 	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:125)
+bina	Bina APK	2026-11-10T12:26:03.0900471Z 	... 2 more
+bina	Bina APK	2026-11-10T12:26:03.0900781Z 
+bina	Bina APK	2026-11-10T12:26:03.0900904Z 
+bina	Bina APK	2026-11-10T12:26:03.1285764Z BUILD FAILED in 1m 23s
+bina	Bina APK	2026-11-10T12:26:03.1299553Z 25 actionable tasks: 25 executed
+bina	Bina APK	2026-11-10T12:26:03.4164963Z ##[error]Process completed with exit code 1.
+bina	Post Sediakan Gradle	﻿2026-11-10T12:26:03.4333591Z Post job cleanup.
+bina	Post Sediakan Gradle	2026-11-10T12:26:03.5884548Z In post-action step
+bina	Post Sediakan Gradle	2026-11-10T12:26:03.5891136Z Stopping all Gradle daemons before saving Gradle User Home state
+bina	Post Sediakan Gradle	2026-11-10T12:26:03.5891682Z Stopping Gradle daemons for /usr/share/gradle-9.8.2
+bina	Post Sediakan Gradle	2026-11-10T12:26:03.5900532Z (node:2828) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+bina	Post Sediakan Gradle	2026-11-10T12:26:03.5901066Z (Use `node --trace-deprecation ...` to show where the warning was created)
+bina	Post Sediakan Gradle	2026-11-10T12:26:03.5905585Z [command]/usr/share/gradle-9.8.2/bin/gradle --stop
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.1761398Z No Gradle daemons are running.
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.2097117Z ##[group]Caching Gradle state
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.3489770Z Caching dependencies with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and cache key: gradle-dependencies-v1-a94ce521fb9720421f1adb0ea52fb527
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.3580495Z Caching instrumented-jars with path '/home/runner/.gradle/caches/jars-*/*/' and cache key: gradle-instrumented-jars-v1-70d9078434c812cfe6f59874a1c7ee11
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.4041417Z Caching groovy-dsl with path '/home/runner/.gradle/caches/*/groovy-dsl/*/' and cache key: gradle-groovy-dsl-v1-f7661b04627ed9986319f0695c5cf0d9
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.4060360Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/nexplay-android/nexplay-android --files-from manifest.txt --use-compress-program zstdmt
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.4668051Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/nexplay-android/nexplay-android --files-from manifest.txt --use-compress-program zstdmt
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.5136683Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/jars-*/*/' and key: gradle-instrumented-jars-v1-70d9078434c812cfe6f59874a1c7ee11: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0XA3zagAAAADy+ndOpoC4SqwGigSByySVUEhYMzFFREdFMDIxOQBFZGdl
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.5410695Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/*/groovy-dsl/*/' and key: gradle-groovy-dsl-v1-f7661b04627ed9986319f0695c5cf0d9: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0XA3zagAAAABaZjPMJmIjRqWdKyFFAffxUEhYMzFFREdFMDIxNgBFZGdl
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.6617041Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/nexplay-android/nexplay-android --files-from manifest.txt --use-compress-program zstdmt
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.7887051Z Caching transforms with path '/home/runner/.gradle/caches/transforms-4/*/
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.7888351Z /home/runner/.gradle/caches/*/transforms/*/' and cache key: gradle-transforms-v1-626aabb18ce707af40a94c3b4905f7df
+bina	Post Sediakan Gradle	2026-11-10T12:26:04.9973360Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and key: gradle-dependencies-v1-a94ce521fb9720421f1adb0ea52fb527: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0XA3zagAAAABDaQT4LfOpR6c8L+4BcNbPUEhYMzFFREdFMDYwNwBFZGdl
+bina	Post Sediakan Gradle	2026-11-10T12:26:05.1569289Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/nexplay-android/nexplay-android --files-from manifest.txt --use-compress-program zstdmt
+bina	Post Sediakan Gradle	2026-11-10T12:26:05.7650437Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/transforms-4/*/
+bina	Post Sediakan Gradle	/home/runner/.gradle/caches/*/transforms/*/' and key: gradle-transforms-v1-626aabb18ce707af40a94c3b4905f7df: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0XQ3zagAAAAAsjklWiuk+Qan/6HxwyJNIUEhYMzFFREdFMDYxNQBFZGdl
+bina	Post Sediakan Gradle	2026-11-10T12:26:06.3010256Z Caching Gradle User Home with cache key: gradle-home-v1|Linux|bina[241e932526c2cb948cd7c74b3a22735e]-4b9a6e56e4a0036ecd17ccbd8c517d5a4890c1ca
+bina	Post Sediakan Gradle	2026-11-10T12:26:06.3079733Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/nexplay-android/nexplay-android --files-from manifest.txt --use-compress-program zstdmt
+bina	Post Sediakan Gradle	2026-11-10T12:26:06.4023367Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle' and key: gradle-home-v1|Linux|bina[241e932526c2cb948cd7c74b3a22735e]-4b9a6e56e4a0036ecd17ccbd8c517d5a4890c1ca: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0Xg3zagAAAAAvkStE1831RYm9QXDtvte2UEhYMzFFREdFMDUxMgBFZGdl
+bina	Post Sediakan Gradle	2026-11-10T12:26:06.4026783Z ##[endgroup]
+bina	Post Sediakan Gradle	2026-11-10T12:26:06.4027037Z Generating Job Summary
+bina	Post Sediakan Gradle	2026-11-10T12:26:06.4036082Z Completed post-action step
+bina	Post Sediakan JDK 17	﻿2026-11-10T12:26:06.4232161Z Post job cleanup.
+bina	Post Sediakan JDK 17	2026-11-10T12:26:06.5334713Z (node:2918) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+bina	Post Sediakan JDK 17	2026-11-10T12:26:06.5335353Z (Use `node --trace-deprecation ...` to show where the warning was created)
+bina	Post Run actions/checkout@v4	﻿2026-11-10T12:26:06.5486797Z Post job cleanup.
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6349495Z [command]/usr/bin/git version
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6358670Z git version 2.56.0
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6399130Z Temporarily overriding HOME='/home/runner/work/_temp/2c8a2c5e-98a7-43fc-a59e-8649c131bb34' before making global git config changes
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6409661Z Adding repository directory to the temporary git global config as a safe directory
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6410661Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nexplay-android/nexplay-android
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6476119Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6510398Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6776815Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6817285Z http.https://github.com/.extraheader
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6826943Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.6860114Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.7136640Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+bina	Post Run actions/checkout@v4	2026-11-10T12:26:06.7166725Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+bina	Complete job	﻿2026-11-10T12:26:06.7538309Z Cleaning up orphan processes
+bina	Complete job	2026-11-10T12:26:06.7815306Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, gradle/actions/setup-gradle@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
