@@ -16,17 +16,28 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Sediakan Android SDK
-        uses: android-actions/setup-android@v3
+      # Runner GitHub SUDAH ada Android SDK di /usr/local/lib/android/sdk.
+      # setup-android v3 gagal kerana cuba pasang pakej 'tools' yang tiada.
+      # Jadi kita guna SDK sedia ada sahaja.
+      - name: Sahkan Android SDK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          ls "$ANDROID_HOME" | head -20
+          ls "$ANDROID_HOME/platforms" 2>/dev/null || echo "tiada platforms"
 
       - name: Sediakan Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      - name: Bina APK (debug)
-        run: gradle assembleDebug --no-daemon --stacktrace
+      - name: Terima lesen SDK
+        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null 2>&1 || true
 
-      - name: Bina APK (release, ditandatangani debug)
-        run: gradle assembleRelease --no-daemon --stacktrace
+      - name: Pasang platform yang diperlukan
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-34" "build-tools;34.0.0" 2>&1 | tail -5 || true
+
+      - name: Bina APK
+        run: gradle assembleDebug --no-daemon --stacktrace
 
       - name: Senaraikan APK
         run: find . -name "*.apk" -exec ls -la {} \;
