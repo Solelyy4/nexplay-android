@@ -1,0 +1,40 @@
+name: Bina APK NEXPLAY
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  bina:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sediakan JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Sediakan Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Sediakan Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Bina APK (debug)
+        run: gradle assembleDebug --no-daemon --stacktrace
+
+      - name: Bina APK (release, ditandatangani debug)
+        run: gradle assembleRelease --no-daemon --stacktrace
+
+      - name: Senaraikan APK
+        run: find . -name "*.apk" -exec ls -la {} \;
+
+      - name: Muat naik APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: nexplay-apk
+          path: app/build/outputs/apk/**/*.apk
+          retention-days: 30
