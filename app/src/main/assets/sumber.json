@@ -1,0 +1,50 @@
+{
+  "_nota": "BOZ boleh tambah sumber sendiri di sini. App akan cuba ikut keutamaan.",
+  "penyedia": [
+    {
+      "nama": "Internet Archive",
+      "jenis": "internet-archive",
+      "keutamaan": 1,
+      "aktif": true,
+      "asas": "https://archive.org",
+      "nota": "Video penuh, percuma, byte-range. TERBUKTI BERFUNGSI."
+    },
+    {
+      "nama": "AniList",
+      "jenis": "metadata",
+      "keutamaan": 1,
+      "aktif": true,
+      "asas": "https://graphql.anilist.co",
+      "nota": "Metadata anime & donghua."
+    },
+    {
+      "nama": "TVMaze",
+      "jenis": "metadata",
+      "keutamaan": 2,
+      "aktif": true,
+      "asas": "https://api.tvmaze.com",
+      "nota": "Metadata drama + senarai episod."
+    },
+    {
+      "nama": "<tambah sumber sendiri>",
+      "jenis": "api",
+      "keutamaan": 9,
+      "aktif": false,
+      "asas": "https://contoh.com/api",
+      "nota": "Isi sendiri bila ada sumber baru."
+    }
+  ],
+  "tetapan": {
+    "cache_jam": 24,
+    "format_utama": [
+      ".mp4",
+      ".m4v",
+      ".webm"
+    ],
+    "format_sandaran": [
+      ".mkv",
+      ".avi"
+    ],
+    "bilangan_rumah": 18
+  }
+}

@@ -246,6 +246,7 @@ const NEXPLAY = (() => {
     { id: 'donghua', label: '🐉 Donghua' },
     { id: 'movie', label: '🎬 Movie' },
     { id: 'cari', label: '🔍 Cari' },
+    { id: 'senarai', label: '🔖 Senarai' },
   ];
 
   function binaTab() {
@@ -274,6 +275,7 @@ const NEXPLAY = (() => {
   async function tukarTab(id) {
     keadaan.tab = id; binaTab();
     if (id === 'rumah') return rumah();
+    if (id === 'senarai') return paparSenaraiSaya();
     $('#utama').innerHTML = skeletonBaris(2);
     const kata = { drama: 'korean', anime: 'popular', donghua: 'chinese', movie: 'action' }[id] || '';
     try {
@@ -336,6 +338,20 @@ const NEXPLAY = (() => {
     }
   }
 
+  function togolSenaraiSemasa() {
+    if (!keadaan.item) return;
+    const ditambah = togolSenarai(keadaan.item);
+    paparButiran(keadaan.item, keadaan.episod);
+    // beritahu BOZ
+    const n = document.createElement('div');
+    n.textContent = ditambah ? '✓ Ditambah ke Senarai' : '✗ Dibuang dari Senarai';
+    n.style.cssText = 'position:fixed;bottom:100px;left:50%;transform:translateX(-50%);' +
+      'background:var(--accent);color:#fff;padding:12px 22px;border-radius:10px;' +
+      'font-weight:700;z-index:1000;box-shadow:0 6px 24px rgba(0,0,0,.5)';
+    document.body.appendChild(n);
+    setTimeout(() => n.remove(), 1800);
+  }
+
   function paparButiran(d, ep) {
     const poster = d.poster || (d.id ? `${IA}/services/img/${d.id}` : '');
     // Sahkan ia benar-benar format boleh main, bukan sekadar ada pautan
@@ -361,6 +377,8 @@ const NEXPLAY = (() => {
           <p class="ringkas">${(d.keterangan || 'Tiada sinopsis.').replace(/<[^>]+>/g, '').slice(0, 420)}</p>
           <div class="aksi">
             ${adaVideo ? `<button class="btn-utama" onclick="NEXPLAY.mainEpisod(1)">▶ Main Sekarang</button>` : ''}
+            <button class="btn-kedua" onclick="NEXPLAY.togolSenaraiSemasa()">
+              ${adaDalamSenarai(d) ? '✓ Dalam Senarai' : '＋ Senarai'}</button>
             <button class="btn-kedua" onclick="NEXPLAY.rumah()">← Kembali</button>
           </div>
         </div>
@@ -379,6 +397,40 @@ const NEXPLAY = (() => {
         ⚠️ Fail ini berformat <b>${(ep[0].nama || '').split('.').pop().toUpperCase()}</b> —
         sesetengah peranti tidak boleh memainkannya terus dalam pelayar.
         Cuba episod lain, atau guna pemain luar (VLC).</div>` : ''}`;
+  }
+
+  // ---------- SENARAI SAYA (watchlist) ----------
+  const KUNCI_SENARAI = 'nexplay-senarai';
+
+  function senaraiSaya() {
+    try { return JSON.parse(localStorage.getItem(KUNCI_SENARAI) || '[]'); }
+    catch (e) { return []; }
+  }
+
+  function togolSenarai(item) {
+    let s = senaraiSaya();
+    const ada = s.findIndex(x => x.id === item.id && x.sumber === item.sumber);
+    if (ada >= 0) { s.splice(ada, 1); }
+    else { s.push({ id: item.id, sumber: item.sumber, tajuk: item.tajuk,
+                    poster: item.poster, tahun: item.tahun, masa: Date.now() }); }
+    localStorage.setItem(KUNCI_SENARAI, JSON.stringify(s.slice(-100)));
+    return ada < 0;
+  }
+
+  function adaDalamSenarai(item) {
+    return senaraiSaya().some(x => x.id === item.id && x.sumber === item.sumber);
+  }
+
+  function paparSenaraiSaya() {
+    const s = senaraiSaya();
+    keadaan.tab = 'senarai'; binaTab();
+    if (!s.length) {
+      $('#utama').innerHTML = paparRalat(
+        'Senarai anda kosong. Tekan "＋ Senarai" pada mana-mana tajuk untuk menambah.',
+        'NEXPLAY.rumah()');
+      return;
+    }
+    $('#utama').innerHTML = paparBaris('Senarai Saya', s.reverse());
   }
 
   // ---------- pemain ----------
@@ -541,7 +593,8 @@ const NEXPLAY = (() => {
   }
 
   return { mula, rumah, tukarTab, cari, cariDariKotak, buka, mainEpisod, tutupPemain,
-           togolMain, lompat, skrinPenuh, pip, laju, keadaan };
+           togolMain, lompat, skrinPenuh, pip, laju, togolSenarai, togolSenaraiSemasa,
+           senaraiSaya, keadaan };
 })();
 
 document.addEventListener('DOMContentLoaded', NEXPLAY.mula);
